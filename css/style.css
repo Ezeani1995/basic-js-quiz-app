@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../Montserrat-Regular.ttf);
+}
+
+body {
+  background: #2f4f4f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background: #f1f1f1;
+  color: #333;
+  width: 500px;
+  max-width: 100%;
+  box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.16);
+  border-radius: 10px;
+}
+
+.quiz-container h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 30px;
+}
+
+.quiz-container h3.red-text,
+.quiz-container h3.red-text i {
+  color: red;
+}
+
+.quiz-container h3.orange-red-text,
+.quiz-container h3.orange-red-text i {
+  color: orangered;
+}
+
+.quiz-container h3.limegreen-text,
+.quiz-container h3.limegreen i {
+  color: limegreen;
+}
+
+.quiz-container h3.green-text,
+.quiz-container h3.green-text i {
+  color: green;
+}
+
+.quiz-container .quiz-header {
+  padding: 40px;
+}
+
+.quiz-container .quiz-header h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.quiz-container .quiz-header li {
+  margin: 20px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.quiz-container .quiz-header li:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.quiz-container .quiz-header li label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.quiz-container .button-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+
+.quiz-container button {
+  display: block;
+  width: 100%;
+  background: dodgerblue;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 18px;
+  font-size: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+}
+
+.quiz-container button:hover {
+  background: rgb(10, 125, 240);
+}
+
+@media (max-width: 768px) {
+  .quiz-container {
+    margin: 50px 10px;
+  }
+
+  .quiz-container .quiz-header h2 {
+    font-size: 20px;
+  }
+
+  .quiz-container h3 {
+    font-size: 18px;
+  }
+
+  .quiz-container .quiz-header li {
+    font-size: 15px;
+  }
+}
